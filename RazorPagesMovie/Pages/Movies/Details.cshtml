@@ -1,12 +1,9 @@
-﻿@page
+﻿@page "{id:int?}"
 @model RazorPagesMovie.Pages.Movies.DetailsModel
-
 @{
     ViewData["Title"] = "Details";
 }
-
 <h2>Details</h2>
-
 <div>
     <h4>Movie</h4>
     <hr />
@@ -34,6 +31,9 @@
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Movie.Price)
+        </dd>
+        <dd>
+            @Html.DisplayFor(model => model.Movie.Rating)
         </dd>
     </dl>
 </div>
